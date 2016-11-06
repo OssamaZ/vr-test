@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/OssamaZ/vr-test",
   "devDependencies": {
+    "aframe-html-shader": "^0.1.1",
     "babel-core": "^6.17.0",
     "babel-loader": "^6.2.5",
     "babel-plugin-transform-object-rest-spread": "^6.16.0",
@@ -47,9 +48,10 @@
     "webpack-hot-middleware": "^2.13.0"
   },
   "dependencies": {
-    "aframe": "^0.3.0",
+    "aframe": "^0.3.2",
     "aframe-animation-component": "^3.0.4",
     "aframe-bmfont-text-component": "^0.1.4",
+    "aframe-layout": "^1.0.2",
     "aframe-react": "^3.4.0",
     "aframe-text-component": "^0.3.0",
     "classnames": "^2.2.5",

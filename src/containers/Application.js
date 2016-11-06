@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 
-// Components
+// Containers
 import VrScene from './VrScene'
+import TwoDUiContainer from './TwoDUiContainer'
 
 class Application extends Component {
   constructor(props) {
@@ -11,19 +12,8 @@ class Application extends Component {
 
   render () {
     return (
-      <div className="application-container" ref='applicationContainer'>
-        <h3>Test WebVR <a href='#' onClick={e => {
-          e.preventDefault();
-          this.refs.applicationContainer.classList.toggle('open-images');
-        }}>images</a></h3>
-        <section className='vr-scene-wrapper'>
-          <div className="images">
-            {['1.png', '2.jpg', '3.jpg', '4.jpg'].map(img => (
-              <img src={`images/${img}`} key={img} />
-            ))}
-          </div>
-          <VrScene />
-        </section>
+      <div className="application-container">
+        <VrScene />
       </div>
     );
   } // Render
