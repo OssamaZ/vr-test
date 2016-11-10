@@ -2,8 +2,8 @@ import {Entity} from 'aframe-react';
 import React from 'react';
 
 export default props => (
-  <Entity geometry={{primitive: 'cylinder', height: 0.2, radius: 50}}
-          material={{color: props.color || '#121417', roughness: 0.8,
-                     repeat: '20 20', src: '#ground'}}
-          position="0 -6 0"/>
+  <Entity geometry={{primitive: 'cylinder', height: 0.2, radius: 70}}
+          material={{color: props.color || '#121417', metalness: .6, roughness: .7,
+                     repeat: '10 10', src: '#ground'}}
+          position="0 -10 0"/>
 );
